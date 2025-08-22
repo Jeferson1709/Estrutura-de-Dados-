@@ -42,8 +42,8 @@ public class Projeto_temperatura2 {
         System.out.println("A média das temperaturas é " + media);
         System.out.println("A quantidade de dias acima da média é" + dias_acima);
         System.out.println("A quantidade de dias abaixo da média é" + dias_abaixo);
-        dados.close();
 
+        dados.close();
     }
 
 }

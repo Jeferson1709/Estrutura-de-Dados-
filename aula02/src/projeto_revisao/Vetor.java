@@ -40,23 +40,21 @@ public class Vetor {
         return s.toString();
     }
 
-public String busca(int posicao)throws Exception {
-        if(posicao >= 0 &&  posicao < tamanho){
-        return this.elementos[posicao];
+    public String busca(int posicao) throws Exception {
+        if (posicao >= 0 && posicao < tamanho) {
+            return this.elementos[posicao];
         } else {
-        throw new Exception("Posição Invalida");
+            throw new Exception("Posição Invalida");
         }
     }
 
-public int busca1(String elemento){
-    
-    for(int i = 0; i < tamanho; i++){
-        if(elementos[i].equalsIgnoreCase(elemento)){
-            return i ;
+    public int busca1(String elemento) {
+
+        for (int i = 0; i < tamanho; i++) {
+            if (elementos[i].equalsIgnoreCase(elemento)) {
+                return i;
+            }
         }
-    }
         return -1;
+    }
 }
-}
-
-
